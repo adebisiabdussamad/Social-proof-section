@@ -1,0 +1,207 @@
+body {
+    background: url(./images/bg-pattern-top-desktop.svg) no-repeat top left,
+        url(./images/bg-pattern-bottom-desktop.svg) no-repeat bottom right;
+    width: 100%;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+main {
+    width: 80%;
+    margin: 50px auto;
+    max-width: 1206px;
+}
+
+.contents {
+    display: flex;
+    height: 250px;
+    align-items: center;
+}
+
+.contents-sec {
+    width: 50%;
+}
+
+.contents-sec h1 {
+    font-size: 40px;
+    width: 260px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.contents-sec p {
+    width: 350px;
+    line-height: 1rem;
+    margin-top: 25px;
+    color: hsl(303, 10%, 53%);
+}
+
+.contents ul {
+    list-style: none;
+}
+
+.contents li {
+    background-color: hsl(300, 24%, 96%);
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding: 15px 40px;
+    border-radius: 7px;
+    width: 350px;
+    text-align: end;
+    padding-left: 10px;
+}
+
+.contents li:first-of-type {
+    margin-left: 30px;
+}
+
+.contents li:nth-of-type(2) {
+    margin-left: 60px;
+}
+
+.contents li:last-of-type {
+    margin-left: 90px;
+}
+
+.contents li::before {
+    content: "";
+    background: url(./images/icon-star.svg) no-repeat,
+        url(./images/icon-star.svg) 25px no-repeat,
+        url(./images/icon-star.svg) 50px no-repeat,
+        url(./images/icon-star.svg) 75px no-repeat,
+        url(./images/icon-star.svg) 100px no-repeat;
+    display: inline-block;
+    width: 117px;
+    height: 17px;
+    margin-right: 20px;
+}
+
+.feedback {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback p {
+    color: white;
+}
+
+.feedback p span {
+    color: hsl(333, 80%, 67%);
+}
+
+.comments {
+    padding: 20px 35px;
+    max-width: 350px;
+    width: 250px;
+    /* box-sizing: border-box; */
+    line-height: 1rem;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+    box-shadow: 0 8px 12px 1px rgb(29 17 51 / 4%),
+        0 3px 16px 2px rgb(9 32 77 / 12%),
+        0 5px 10px -3px rgb(29 17 51 / 12%);
+}
+
+.comments:first-of-type {
+    position: relative;
+    top: 30px;
+}
+
+.comments:nth-of-type(2) {
+    position: relative;
+    top: 60px;
+}
+
+.comments:last-of-type {
+    position: relative;
+    top: 90px;
+}
+
+.img img {
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 15px;
+}
+
+
+.img {
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+figure {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    top: 80px;
+    color: hsl(300, 43%, 22%);
+}
+
+footer a {
+    font-weight: 700;
+    color: hsl(333, 80%, 67%);
+}
+
+
+@media screen and (max-width: 900px) {
+    body {
+        background: url(./images/bg-pattern-top-mobile.svg) no-repeat top left,
+            url(./images/bg-pattern-bottom-mobile.svg) no-repeat bottom right;
+    }
+
+    .contents {
+        display: grid;
+        justify-content: center;
+        height: 500px;
+    }
+
+    .contents li {
+        margin-left: 0 !important;
+        margin-top: 10px;
+        text-align: center;
+        padding-right: 10px;
+    }
+
+    .contents-sec h1 {
+        text-align: center;
+        align-items: center;
+        position: relative;
+        left: 60px;
+    }
+
+    .contents-sec p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contents ul {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .feedback {
+        display: grid;
+        justify-content: center;
+        height: 700px;
+        margin-top: 20px;
+    }
+
+    .contents li::before {
+        margin-right: 100px;
+        margin-left: 100px;
+        margin-bottom: 20px;
+        text-align: center;
+        padding-right: 10px;
+    }
+}
